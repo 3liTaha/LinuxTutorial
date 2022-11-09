@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Lesson 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+				<div class="p-4 pt-5">
+		  		<h1><a href="index.html" class="logo">LinTub</a></h1>
+	        <ul class="list-unstyled components mb-5">
+				<li>
+					<a href="lesson1.html">Lesson 1</a>
+				</li>
+				<li>
+					<a href="lesson2.html">Lesson 2</a>
+				</li>
+				<li>
+					<a href="lesson3.html">Lesson 3</a>
+				</li>
+				<li>
+					<a href="lesson4.html">Lesson 4</a>
+				</li>
+				<li>
+					<a href="lesson5.html">Lesson 5</a>
+				</li>
+				<li>
+					<a href="lesson6.html">Lesson 6</a>
+				</li>
+				<li>
+					<a href="test.html">Quiz Yourself</a>
+				</li>
+	        </ul>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Ali Taha
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+
+        <h2 class="mb-4">Exercise 2: Linux File System</h2>
+<p>
+	        Being able to manipulate files and their location using Linux commands bolsters your efficiency while working instead of having to utilize the mouse for all those actions. In this exercise we will go over some commonly used commands. 
+
+</p>	
+<p>
+			You could create a file in two main ways. If you’re looking to create an empty file, test1.txt you can use:
+	
+
+</p>			
+<p>
+	<code>
+		touch test1.txt
+	
+	</code>
+</p>	
+<p>		You could also create a file with some text in it using the echo command introduced in the earlier exercise:</p>
+
+<p>		<code>echo “let’s start with exercise2” > test1.txt </code></p>
+
+<p>
+			This command would create the file test1.txt with the text ‘let’s start with exercise2’. Having learned how to create a file, let’s delve into the manipulation part of it. The <code>mv </code>command would be a powerful tool throughout this. If we want to rename test1.txt to test2.txt, we would simply type in 
+
+</p>	
+<p>		<code>mv test1.txt test2.txt</code></p>
+
+<p>		The<code> mv </code>command also enables us to move the file to another directory. We’ll use the directory created in the previous exercise baby_lions for directory-related commands in this exercise. The following command</p>
+
+<p>		<code>mv test2.txt baby_lions</code></p>
+
+<p>
+			moves the file test2.txt to the directory baby_lions. The last step of file manipulation is knowing how to delete a file. To delete the file test2.txt, the following command suffices:
+
+</p>	
+<p>		<code>rm test2.txt</code> </p>
+
+<p>		You could delete multiple files by listing all of them in front of <code>rm</code>. Bonus: you can also delete directories using the <code>-d </code>flag. This would translate into:</p>
+
+<p>		<code>rm -d baby_lions</code></p>
+
+<p>		We may have lied about being finished. Just one small yet powerful command remains, <code>cat</code>. Don’t be deceived by the name, it’s one of the most powerful commands to have under your use. You can use it to view a file by simply writing:</p>
+
+<p>
+			<code>cat test2.txt</code>
+
+</p>	
+<p>
+			You can copy the contents from one file to another:
+
+</p>	
+<p>		<code>cat test1.txt > test2.txt</code></p>
+
+<p>		This copies the contents from test1 to test2. You can also use it to create a new file:</p>
+
+<p>		<code>cat > test1.txt</code></p>
+
+<p>		While this may be a lot of information, all of these commands can be associated with their function. For example remove and rm!</p>
+
+
+
+
+		<div id="term_wrap"  style="margin-left: 12cm auto">
+			<div id="term_container"></div>
+			<div><progress id="net_progress"></progress></div>
+		</div>
+	</div>
+		</div>
+	<script type="text/javascript" src="term.js"></script>
+	<script type="text/javascript" src="jslinux.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

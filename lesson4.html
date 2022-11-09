@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Lesson 4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+				<div class="p-4 pt-5">
+		  		<h1><a href="index.html" class="logo">LinTub</a></h1>
+	        <ul class="list-unstyled components mb-5">
+				<li>
+					<a href="lesson1.html">Lesson 1</a>
+				</li>
+				<li>
+					<a href="lesson2.html">Lesson 2</a>
+				</li>
+				<li>
+					<a href="lesson3.html">Lesson 3</a>
+				</li>
+				<li>
+					<a href="lesson4.html">Lesson 4</a>
+				</li>
+				<li>
+					<a href="lesson5.html">Lesson 5</a>
+				</li>
+				<li>
+					<a href="lesson6.html">Lesson 6</a>
+				</li>
+				<li>
+					<a href="test.html">Quiz Yourself</a>
+				</li>
+	        </ul>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Ali Taha
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+
+        <h2 class="mb-4">Exercise 4: Searching for Files and Words</h2>
+<p>		In most industry settings, projects are collaborative and large-scale. Code bases are tens of thousands to millions of lines in length. In any large-scale project, being able to successfully navigate Linux thus depends on being able to find what you need in the large sea of files. Here, we introduce basic techniques for finding files and content in the Linux file system. </p>
+
+<p>		First, let’s assume that you know a phrase located inside some files in your directory, like “cats”. You want to be able to find all instances of the word “cats” in the files inside this folder. To do so, let’s make some files quickly using the skills you learned earlier:</p>
+		
+<p>
+<code>
+				echo “I love cats” > file1.txt<br>
+				echo “Dogs are cool” > file2.txt<br>
+				echo “Cats are the best” > file3.txt<br>
+				echo “Kittens are small” > file4.txt<br>
+				echo “I want a cat” > file5.txt<br>
+</code>
+</p>
+		
+<p>		Now, let’s try to find all of the matches of the word “cats”. The command grep does exactly this. Let’s first search for it in just one of the files, like file 1. We specify the string we are searching for and then the name of the file:</p>
+		
+<p>		<code>grep cats file1.txt</code></p>
+		
+<p>		You should see the line of the file containing “cats” returned, with the word “cats” highlighted. Now, let’s find where it is in all files by substituting the wildcard character <code>*</code> for the file name:</p>
+		
+<p>		<code>grep cats *</code></p>
+		
+<p>		Now, you can see the name of each file where the word “cats” was found and the corresponding matching line. Finally, let’s try searching for a longer phrase. Now, we need to put it in quotes:</p> 
+		
+<p>		<code>grep “a cat” </code>*</p>
+		
+<p>		It should be found in file4.txt only.</p> 
+		
+<p>		Next, we want to be able to search for file names as well. To set up, create a directory named simulations in your current directory, move to that directory, and create a file named nov_5_tests.txt containing the phrase “Observation 1: users could navigate the document successfully”. You should know how to create it by now. </p>
+		
+<p>		Now, move back up a level in the directory. The find command lets us search for files by name. Let’s search for files named “nov_5_tests.txt” in case we forgot where we put it:</p>
+		
+<p>		<code>find . -name “nov_5_tests.txt”</code></p>
+		
+<p>		The dot tells us to start searching in the current directory. It will search recursively, so even though our file is not found by listing the files in this directory, it is in our part of the file “tree” and will be found. You should see the following path to the file: <code>./testing/nov_5_tests.txt</code></p>
+
+		<div id="term_wrap"  style="margin-left: 12cm auto">
+			<div id="term_container"></div>
+			<div><progress id="net_progress"></progress></div>
+		</div>
+	</div>
+		</div>
+	<script type="text/javascript" src="term.js"></script>
+	<script type="text/javascript" src="jslinux.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

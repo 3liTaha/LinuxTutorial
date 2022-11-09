@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Lesson 5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+				<div class="p-4 pt-5">
+		  		<h1><a href="index.html" class="logo">LinTub</a></h1>
+	        <ul class="list-unstyled components mb-5">
+				<li>
+					<a href="lesson1.html">Lesson 1</a>
+				</li>
+				<li>
+					<a href="lesson2.html">Lesson 2</a>
+				</li>
+				<li>
+					<a href="lesson3.html">Lesson 3</a>
+				</li>
+				<li>
+					<a href="lesson4.html">Lesson 4</a>
+				</li>
+				<li>
+					<a href="lesson5.html">Lesson 5</a>
+				</li>
+				<li>
+					<a href="lesson6.html">Lesson 6</a>
+				</li>
+				<li>
+					<a href="test.html">Quiz Yourself</a>
+				</li>
+	        </ul>
+
+	        <div class="footer">
+	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Ali Taha
+						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+
+        <h2 class="mb-4">Exercise 5: Intro to Vi</h2>
+		<p>
+			
+			Visual Editor, or vi for short, is a text editor that comes pre-installed on Linux devices. Vi supports most file formats and is known as the programmer editor. The beauty of Vi comes from the fact that you can save and edit files all without your hands leaving the keyboard. Vi allows programmers to maintain fewer windows open as there is no need to have a GUI text editor open such as Atom or Sublime Text. Vi has two default modes “Command Mode” and “Insert Mode”. By default, you will be in command mode as soon as vi is opened. Command mode allows users to copy, paste, delete, and move text around. But if you want to write changes to the file you have to enter Insert Mode. 
+
+		</p>	
+<p>		To get started using vi it's as simple as typing <code>vi [filename]</code> into your console like this <code>vi baby_lions</code>. Let’s try it out and see what happens.</p>
+	<p>
+			
+			As you may have noticed the file did not exist beforehand but everything seemed like it work fine. This is because if the file exists it will take you into the file allowing you to view it and if the file does not exist it will create a brand new file for you and you can begin editing right away. Don’t be overwhelmed by the multiple  <code>~</code> on each line. Those just mean the line is not being currently used.
+			
+	</p>
+	<p>
+			Let’s start editing by simply clicking i and you should see the <code>I</code> in the bottom left corner of the window. Now go ahead and type whatever you would like into your file. After you are done editing the file we want to save the file. To do this simply hit ESC to exit INSERT mode. To enter commands into vi you have to be in command mode and must first type<code> :</code> then you will be able to type any vi command you want. So to save the file and exit vi simply type <code>:wq!</code>. If you want to simply exit the file without saving use the <code>:q!</code> command.
+			
+	</p>
+		<p>
+			Vi offers a lot more than what's stated above and can save you tons of time when it comes to editing files. If you want to learn more there will be references below to further learn Vi.
+			
+		</p>
+
+
+		<div id="term_wrap"  style="margin-left: 12cm auto">
+			<div id="term_container"></div>
+			<div><progress id="net_progress"></progress></div>
+		</div>
+	</div>
+		</div>
+	<script type="text/javascript" src="term.js"></script>
+	<script type="text/javascript" src="jslinux.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
