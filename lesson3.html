@@ -60,10 +60,10 @@
 
         <h2 class="mb-4">Lesson 3: File Compression and Decompression</h2>
 <p>
-		The term compressed files has become increasingly common as such files require less storage space and less resources to transfer. To achieve this, Linux once again comes to the help. It’s a complete circle here where you can compress and then go a step further and decompress the file! Let’s start off with the most simple type of compression:
+		The term compressed files has become increasingly common as such files require less storage space and less resources to transfer. To achieve this, Linux once again comes to the help. It’s a complete circle here where you can compress and then go a step further and decompress the file! We first will have to create a file, which has been covered in the previous exercise. Let’s start off with the most simple type of compression:
 </p>	
 <p>
-		<code>zip test1.zip test1.txt</code>
+		<code>gzip test1.zip test1.txt</code>
 
 </p>		
 <p>
@@ -71,7 +71,7 @@
 
 </p>		
 <p>
-		<code>unzip test1.zip</code>
+		<code>gunzip test1.zip</code>
 
 </p>		
 <p>
@@ -79,7 +79,7 @@
 
 </p>		
 <p>
-		<code>zip -p test1.zip test1.txt</code>
+		<code>gzip -p test1.zip test1.txt</code>
 
 </p>		
 	
@@ -89,7 +89,7 @@
 </p>		
 
 <p>
-	However, Linux also supports various types of compressions. The two main ones being <code>gzip </code>and<code> bzip2</code>. While <code>gzip</code> provides faster compression, the latter ensures a higher compression ratio. As you guessed, the following two commands are responsible for the compression of files:
+	However, Linux also supports various types of compressions. The two main ones being <code>gzip </code>  (which has already been introduced) and<code> bzip2</code>. While <code>gzip</code> provides faster compression, the latter ensures a higher compression ratio. As you guessed, the following two commands are responsible for the compression of files:
 
 </p>		
 <p>	<code>gzip test1.txt</code></p>
@@ -104,7 +104,7 @@
 	
 <p><code>	bunzip2 test1.bz2</code></p>
 	
-<p>	While zip and unzip are sufficient for most scenario, we hoped to give a context into other forms of compression and decompression commands. More ways to impress your manager!</p>
+<p>	While gzip and gunzip are sufficient for most scenario, we hoped to give a context into other forms of compression and decompression commands. More ways to impress your manager!</p>
 			
 	
 	
