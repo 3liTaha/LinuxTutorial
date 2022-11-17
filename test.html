@@ -56,12 +56,498 @@
     	</nav>
 
         <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5 pt-5">
+    <div id="content" class="p-4 p-md-5 pt-5">
 
-			<h1>Coming Soon!</h1>
+		<div class="accordion" id="accordionExample">
+
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q0" aria-expanded="false" aria-controls="Q0">
+					  What command would you use to make a new directory?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q0" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					mkdir				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q1" aria-expanded="false" aria-controls="Q1">
+					  What command do you use to display the list of files in the workspace?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					ls				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q2" aria-expanded="false" aria-controls="Q2">
+					  Say my directory contains a subdirectory called results. What command would I use if I want to move to the results directory?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					cd results				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q3" aria-expanded="false" aria-controls="Q3">
+					  What would the command echo I love Linux print?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					I love linux				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q4" aria-expanded="false" aria-controls="Q4">
+					  What would the command echo “1234”+”432” print?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					“1234”+”432” (since 1234 and 432 are strings, the plus sign would not act as an int operator and would not perform addition)				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q5" aria-expanded="false" aria-controls="Q5">
+					  How would I create a new file with the text ‘Hello’?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					echo “Hello” > test1.txt				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q6" aria-expanded="false" aria-controls="Q6">
+					  What would the command be to copy the contents from exercise2.txt to exercise3.txt?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q6" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					cat exercise2.txt > exercise3.txt				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q7" aria-expanded="false" aria-controls="Q7">
+					  What would the command rm exercise2.txt do?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q7" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					It would delete the file exercise.txt				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q8" aria-expanded="false" aria-controls="Q8">
+					  Assume a directory named linux_tutorial, what is the difference between commands mv hello.txt bye.txt and mv hello.txt linux_tutorial?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q8" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					The first command uses mv for renaming the file, while in the other command mv is used for moving the file to the directory named linux_tutorial.				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q9" aria-expanded="false" aria-controls="Q9">
+					  Do the command touch and cat have any similarity in regard to their functionality?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q9" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					Yes, they both can be used to create new empty files.				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q10" aria-expanded="false" aria-controls="Q10">
+					  What does -p flag mean when added to a zip command?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q10" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					The flag means that you are password protecting the compressed file.				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q11" aria-expanded="false" aria-controls="Q11">
+					  How would I decompress a file called Hello.zip?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q11" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					gunzip Hello.zip				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q12" aria-expanded="false" aria-controls="Q12">
+					  What is the command for compressing a text file called quiz to answers.zip?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q12" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					gzip answers.zip quiz.txt				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q13" aria-expanded="false" aria-controls="Q13">
+					  Can I decompress a .bz2 file with gunzip? If not, what would I use?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q13" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					No, you can only decompress .gz files with gunzip. Instead the command would be bunzip2.				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q14" aria-expanded="false" aria-controls="Q14">
+					  What type of compressed file would be created using gzip test1.txt?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q14" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					The type of file would be .gz, and would be called test1.gz.				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q15" aria-expanded="false" aria-controls="Q15">
+					  Suppose I want to search for all files starting in this directory for a file with the name “hello.c”. How would I do that?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q15" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					find . -name 'hello.c'				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q16" aria-expanded="false" aria-controls="Q16">
+					  What does the * mean in the following command: grep moon *
+					</button>
+				  </h5>
+				</div>
+				<div id="Q16" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					It searches all files in the directory				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q17" aria-expanded="false" aria-controls="Q17">
+					  Suppose you’re currently in a directory home, which has a folder named fall2022. Inside there, there is a directory named peterpan. Inside that, we have a program called pickledpeppers.c. If you’re in the home directory, how would you find the file pickledpeppers.c?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q17" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					find . -name 'pickledpeppers.c'				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q18" aria-expanded="false" aria-controls="Q18">
+					  Does the find command search recursively?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q18" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					Yes				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q19" aria-expanded="false" aria-controls="Q19">
+					  [Challenge] In the setup from question 3, without moving directories, how would I search only the peterpan directory?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q19" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					find fall2022/peterpan -name 'pickledpeppers.c'				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q20" aria-expanded="false" aria-controls="Q20">
+					  Can the Linux command grep still be used within Visual Studio since it provides a graphical way to search for strings in files?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q20" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					Yes				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q21" aria-expanded="false" aria-controls="Q21">
+					  True/False: VSCode only allows you to open one terminal window at a time.
+					</button>
+				  </h5>
+				</div>
+				<div id="Q21" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					False				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q22" aria-expanded="false" aria-controls="Q22">
+					  What is the command to create and start editing a file named helloworld.c in VSCode using Linux?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q22" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					code helloworld.c				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q23" aria-expanded="false" aria-controls="Q23">
+					  Choose one of the Linux terminal types available on your VSCode installation (or one from our example image if you don’t have VSCode installed).
+					</button>
+				  </h5>
+				</div>
+				<div id="Q23" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					Ex. PowerShell				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q24" aria-expanded="false" aria-controls="Q24">
+					  Name one other functionality in the same toolbar as the split-terminal command.
+					</button>
+				  </h5>
+				</div>
+				<div id="Q24" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					Ex. Close terminal (trash can icon)				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q25" aria-expanded="false" aria-controls="Q25">
+					  Suppose you want to use vi to edit a file named tux.txt. What would you type into the console to do that?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q25" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					vi tux.txt				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q26" aria-expanded="false" aria-controls="Q26">
+					  What do you type while in vi to enter INSERT mode?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q26" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					i				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q27" aria-expanded="false" aria-controls="Q27">
+					  How would you exit a file while saving the changes made to it while in Command mode?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q27" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					:wq!				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q28" aria-expanded="false" aria-controls="Q28">
+					  If you get stuck in vi, how would you exit back to your console?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q28" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					:q!				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q29" aria-expanded="false" aria-controls="Q29">
+					  What does the ~ mean when you first enter vi?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q29" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					The line is currently not being occupied or used.				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q30" aria-expanded="false" aria-controls="Q30">
+					  Suppose I want to kill a process with a PID of  10. How would I do that?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q30" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					Kill 10				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q31" aria-expanded="false" aria-controls="Q31">
+					  Let's say your computer is running slower than normal. You want to see what processes are running to see how much memory and CPU percentage you are using. What command would you run?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q31" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					top				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q32" aria-expanded="false" aria-controls="Q32">
+					  What does the state R stand for in the STAT column after you run the command top?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q32" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					Runnable or Running				 
+				   </div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Q33" aria-expanded="false" aria-controls="Q33">
+					  What would I type if I wanted to pause execution for my next command for 1 second?
+					</button>
+				  </h5>
+				</div>
+				<div id="Q33" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-body">
+					sleep 1				 
+				   </div>
+				</div>
+			</div>
+
+
+
+
+
+		
+
+
+	
         
-      </div>
-		</div>
+      	</div>
+	</div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
